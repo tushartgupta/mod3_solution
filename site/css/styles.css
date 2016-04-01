@@ -1,0 +1,137 @@
+body {
+  font-size: 15px;
+  color: #fff;
+  /*background-color: #61122f;*/
+  background: url('../images/bg.jpg') no-repeat;
+  /*background: filter: blur(10px);*/
+  background-size: cover;
+  font-family: 'Oxygen', sans-serif;
+/*  -webkit-filter: blur(10px);     
+    filter: blur(10px);  */    
+    /*opacity: 0.6;*/
+}
+
+
+#header-nav {
+  background-color: #F5CBA7;
+  border-radius: 0;
+  border: 0;
+}
+
+.container{
+  margin-left: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list li{
+  border-bottom: 2px solid #000;
+}
+#nav-list a {
+  color: black;
+  background-color: #DAF7A6;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.5em;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -60px;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+#main-content{
+  width: 100%;
+}
+#home-tiles {
+  width: 95vw;
+  margin: 10px;
+}
+#menu-tile {
+  height: 1000px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+
+
+}
+#menu-tile:hover{
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile h3{
+  color: black;
+}
+#menu-tile p{
+  color: black;
+
+}
+h1{
+  color: black;
+  width: 100%;
+}
+/* END HOME PAGE */
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { 
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #menu-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+    overflow: auto;
+  }
+}
